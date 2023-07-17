@@ -1,0 +1,107 @@
+html{
+    scrollbar-gutter: stable;/*la scrollbar esiste ma non occupa spazio*/
+}
+.subNavbar{
+    position: relative;
+    height: 30px;
+    background-color: #ff4070;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+
+.subNavbar i{
+    color: white;
+ 
+}
+.subMenu,.subMenuCont,.sub-subMenuCont {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.subNavbar .subMenu > li > a , .sub-subMenuCont a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.subNavbar .subMenu > li:hover .subMenuCont{
+    display: flex;
+}
+
+
+.subMenuCont{
+    top:33px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    height: 33px;
+    display: none;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.subMenuCont a{
+    
+    text-decoration: none;
+}
+.quadratinoIndicatore{
+    background-color: white;
+    position: absolute;
+    top:22px;left: 15%;
+    height: 20px;width: 20px;
+    transform: rotate(45deg);
+    transition: .3s;
+    animation-fill-mode: forwards;
+}
+
+
+/*sub-subMenuCont*/
+.sub-subMenuCont{
+    position: absolute;
+    z-index: 1;
+    display: none;
+    grid-template-columns: auto auto ;
+    width: 400px;
+    padding: 10px;
+    background: #ff4070cc ;
+}
+.sub-subMenuCont li{
+    border: 1px solid rgb(255, 64, 112,0) ;
+    padding: 5px 0;
+}
+.sub-subMenuCont li:not(.sub-subMenuCont li:first-child):hover{
+    border: 1px solid white;
+}
+.sub-subMenuCont span{
+    font-size: 15px;
+    position: relative;top:-20px
+}
+.sub-subMenuCont li a,.sub-subMenuCont li:last-child button{
+    font-weight: lighter;
+}
+.sub-subMenuCont li:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 30px;
+    font-weight: 100;
+    margin-left:20% ;
+}
+.sub-subMenuCont li:last-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.sub-subMenuCont li:last-child button{
+    border: none;
+    background-color: rgb(255, 64, 112,0);
+    color: white;
+    margin-left: 30%;
+}
+
+
+.subMenuCont li:not(.sub-subMenuCont li):hover .sub-subMenuCont{
+    display: grid;
+}

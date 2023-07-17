@@ -1,0 +1,77 @@
+body{
+    background-color: #f2f2f2;
+}
+.subMenuCont > li > a{
+    color: black;
+}
+.commento{
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid rgb(0,0,0,.1);
+    width: 65%;
+    min-height: 400px;
+    margin-bottom: 40px;
+}
+.commento h1{
+    margin-left: 10px;
+}
+.commento i{
+    background-color: rgba(122, 87, 87, 0.4);
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 39px;
+}
+.commento input{
+    height: 30px;
+    font-size: 20px;
+}
+.commento textarea{
+    margin-left: 86px;
+    display: block;
+    width: 80%;
+}
+.commento h7{
+    margin-left: 86px;
+}
+.poesie-container{
+    margin-top: 50px;
+}
+.areaVoto{
+    width: 200px;
+    height: 40px;
+    background: url("../MostraPoesieComponente/cerchio.png");
+    background-size: 40px 40px;
+  
+}
+.voto1{
+    background: url("../MostraPoesieComponente/cerchio.png"),url("../MostraPoesieComponente/cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 0px;
+}
+.voto2{
+    background: url("../MostraPoesieComponente/cerchio.png"),url("../MostraPoesieComponente/cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 40px;
+}
+.voto3{
+    background: url("../MostraPoesieComponente/cerchio.png"),url("../MostraPoesieComponente/cerchioPieno.png") no-repeat  ;
+
+    background-size: 40px 40px;
+    background-position-x: 80px;
+}
+.voto4{
+    background: url("../MostraPoesieComponente/cerchio.png"),url("../MostraPoesieComponente/cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 120px;
+}
+.voto5{
+    background: url("../MostraPoesieComponente/cerchio.png"),url("../MostraPoesieComponente/cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 160px;
+}
+.commento .button {
+    margin-top: 20px;
+    margin-right: 45px;
+}

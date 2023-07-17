@@ -1,0 +1,55 @@
+.footer{
+    margin-top: 140px;
+    position: relative;
+    display: flex;
+   
+    background-color: #262626;
+    width: 100%;
+   
+}
+.hotTags{
+    padding: 20px;
+}
+.hotTags a{
+    line-height: 25px;
+    color: white;
+    text-decoration: none;
+}
+.hotTags a:hover{
+    background-color: #ff4070;
+}
+.hotTags a:nth-child(odd){
+    font-size: 20px;
+}
+.hotTags a:nth-child(even){
+    font-size: 25px;
+}
+.footer::before {
+    width: 100%;
+    height: 20px;
+    content: "";
+    background: url(triangoli.png) repeat-x ;
+    
+    position: absolute;
+    top:-20px;
+}
+
+.newLetter{
+    color: white;
+}
+.footer img {
+    
+    width: 220px;
+    height: 200px;
+}
+.newLetter button{
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: 1px solid #ff4070;
+    border-radius: 5px;
+    background-color: #ff4070;
+    cursor: pointer;
+}

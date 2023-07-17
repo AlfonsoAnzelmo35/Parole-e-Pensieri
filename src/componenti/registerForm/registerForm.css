@@ -1,0 +1,18 @@
+.register-form{
+    width: 500px;
+    margin: auto;
+}
+.register-form input{
+    font-size: 20px;
+    width: 250px;height: 40px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.register-form button{
+    margin-left: 40%;
+   float: none;
+   
+
+}

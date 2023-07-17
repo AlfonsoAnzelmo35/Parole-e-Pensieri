@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "webpack serve --open"
+  },
+  "dependencies": {
+    "firebase": "^9.23.0",
+    "font-awesome": "^4.7.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "ts-loader": "^9.4.4",
+    "webpack-bundle-analyzer": "^4.9.0",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

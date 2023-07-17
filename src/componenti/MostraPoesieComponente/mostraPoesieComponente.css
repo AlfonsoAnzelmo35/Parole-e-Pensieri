@@ -1,0 +1,89 @@
+.poesie-container{
+   
+    background-color: rgb(245, 217, 217);
+  
+    padding: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    
+}
+.button{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(119, 109, 109)   ;
+    text-transform: uppercase;
+    height: 35px;width: 120px;
+    border: 1px solid;
+    border-radius:5px ;
+    background-image: linear-gradient(to bottom,rgb(255, 254, 254), rgb(225, 221, 221));
+}
+.poesie-container h1{
+    font-weight: 400;
+}
+.areaVoto{
+    width: 200px;
+    height: 40px;
+    background: url("cerchio.png");
+    background-size: 40px 40px;
+  
+}
+
+.areaVoto img{
+    width: 40px;
+    height: 40px;
+   
+}
+
+.voto1{
+    background: url("cerchio.png"),url("cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 0px;
+}
+.voto2{
+    background: url("cerchio.png"),url("cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 40px;
+}
+.voto3{
+    background: url("cerchio.png"),url("cerchioPieno.png") no-repeat  ;
+
+    background-size: 40px 40px;
+    background-position-x: 80px;
+}
+.voto4{
+    background: url("cerchio.png"),url("cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 120px;
+}
+.voto5{
+    background: url("cerchio.png"),url("cerchioPieno.png") no-repeat  ;
+    background-size: 40px 40px;
+    background-position-x: 160px;
+}
+
+.poesie-container > p{
+    height: 26px;
+}
+
+.poesie-container i{
+    color: rgb(119, 109, 109)   ;
+    margin:0 10px;
+    position: relative;
+    top:5px;
+    font-size: 30px;
+}
+
+.poesie-container i ,.button{
+ float: right;      
+ text-align: center;
+ text-decoration: none;
+}
+.poesie-container .button{
+    font-size: 18px;
+}
+
+.poesie-container i:hover , .button:hover{
+    color: #ff4070;
+    cursor: pointer;
+}

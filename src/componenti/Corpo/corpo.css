@@ -1,0 +1,36 @@
+.corpo{
+    
+    
+  
+    margin-top: 40px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+body{
+    background-color: #f2f2f2;
+}
+.link-veloce{
+  
+    margin: 10px;
+}
+.link-veloce img{
+    width: 120px;
+    height:120px;
+    object-fit: cover;
+    border:10px solid rgb(241, 158, 158);
+    border-radius: 50%;
+
+}
+
+.indice td{
+    padding-right: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.indice td:hover {
+text-decoration: underline;}
