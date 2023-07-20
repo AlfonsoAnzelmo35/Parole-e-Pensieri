@@ -1,0 +1,36 @@
+.scriviPoesia-container{
+    height: 400px;
+    text-align: center;
+    display: flex;
+    margin:40px 0;
+}
+.scriviPoesia-container .firstChildDiv{
+    flex-grow: 7;
+   
+    width: 100%;
+}
+
+.scriviPoesia-container .button{
+    margin-top: 20px;
+    float: none;
+    display: block;
+   
+}
+
+.scriviPoesia-container textarea {
+    width: 75%;
+    height: 100%;
+    border: 2px solid #ff4070;
+    border-radius: 10px;
+    text-transform: capitalize; 
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+ }
+.selectCategorie{
+    font-size: 20px;
+   
+    padding: 5px 10px;
+    border: 2px solid #ff4070;
+    border-radius: 10px;
+}

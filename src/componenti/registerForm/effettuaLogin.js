@@ -3,7 +3,6 @@ import "./effettuaLogin.css"
 import { auth } from "../../configurazioneFirebase";
 import { rimuoviMostraAutenticazione } from "../../accessori";
 
-
 //questo file permette di effetuare il login(che per firebase significa triggherare onAuthStateChanged)
 function effettuaLogin(){
         let divPadre = document.createElement("div") ;
@@ -105,11 +104,26 @@ function chiudiShowAuntenticazione(){
 //cambia da Accedi a Esci il bottone del navbar a secondo se l'utente è loggato 
 function settaAccediEsci(){
     let accedi = document.getElementById("accedi-btn") ;
+    
+    let navbar = document.querySelector(".navbar-principale") ;
+    let ScriviPoesieLink = document.createElement("a") ;
+    ScriviPoesieLink.className = "scriviBtn button" ;
+    ScriviPoesieLink.href = "../../../scriviPoesia.html" ;
+    ScriviPoesieLink.textContent = "SCRIVI UNA POESIA"
+    
+
     onAuthStateChanged(auth,(user)=>{
         if(user){
+            //l'utente ha eseguito l'accesso
+            let child = navbar.childNodes[2]
+            navbar.insertBefore(ScriviPoesieLink,child)
+            
             accedi.innerText = "esci"
             document.querySelector("#accedi-btn").addEventListener("click",effettuaLogout) ;
         }else {
+            //l'utente non ha ancora eseguito l'accesso
+            ScriviPoesieLink.remove()
+
             accedi.innerText = "accedi"
             document.querySelector("#accedi-btn").addEventListener("click",effettuaLogin) ;
         }   

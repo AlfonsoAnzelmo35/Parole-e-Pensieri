@@ -2,8 +2,11 @@ import {refCollCategoria,categoriePrincipali} from "./../../configurazioneFireba
 import { getDoc,doc,getDocs,collection } from "firebase/firestore/lite";
 import "./tabellaListaCategorie.css" ;
 import { mostraPoesieComponente } from "../MostraPoesieComponente/mostraPoesieComponente.js";
+import { rimuoviTuttiGliElementiDaBody } from "../../accessori.js";
 
 async function tabellaListaCategorie(e){
+    rimuoviTuttiGliElementiDaBody([document.querySelector("div.poesie-container.register-form")]) ;
+
     let categoria = e.target.textContent ;
     //modifica la stringa categoria
     categoria = categoria == "Poesie"?categoria.slice(0,1).toLowerCase() + categoria.slice(1) : categoria.replaceAll(" ", "-");categoria = categoria.replaceAll("di", "");categoria = categoria.replaceAll("--", "-");if(categoria == "Frasi-&-Aforismi")categoria = "Frasi&Aforismi"          

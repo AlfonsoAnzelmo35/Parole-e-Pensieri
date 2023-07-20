@@ -1,7 +1,6 @@
 import "./navbar.css"
 import {tabellaListaCategorie} from '../tabellaListaCategorie/tabellaListaCategorie.js';
 import {subNavbar} from "./subNavbar/subNavbar.js"
-import {effettuaLogin} from "./../registerForm/effettuaLogin.js" ;
 import { settaAccediEsci } from "./../registerForm/effettuaLogin.js";
 function navbar() {
     
@@ -45,7 +44,7 @@ function navbar() {
     
     let listaSubMenu = document.querySelectorAll(".subMenuCont > li") ;
     listaSubMenu.forEach(item => item.addEventListener("click", tabellaListaCategorie));
-
+    
     
     let list = document.querySelectorAll(".subNavbar .subMenu > li > a") ;
     let quadratinoDinamico = document.querySelector(".subNavbar .quadratinoIndicatore") ;

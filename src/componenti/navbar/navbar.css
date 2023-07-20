@@ -71,3 +71,11 @@
     background-color: #ff4070;
     color:white ;
 }
+
+.scriviBtn{
+    background-image:none ;
+    color:  #ff4070;
+    background-color: #ff4070;
+    position: relative;
+    top:15px ;left:-30px;
+}

@@ -1,16 +1,21 @@
-import { onAuthStateChanged, signOut } from "firebase/auth";
-import { auth } from "./configurazioneFirebase";
 
 
-//altrimenti rimane come aver eseguito l'accesso nonostante chiuda il broswer o la pagina
-/*window.addEventListener('beforeunload',() =>{ 
-   
-    signOut(auth).then(()=>{
-        
-    }).catch((error)=>{
-        
-    }) ;    
-});*/
+//rimuov tutti gli elementi dal body
+function rimuoviTuttiGliElementiDaBody(elementi){
+    
+    let children = elementi ;
+  
+    for(let i = 0 ; i < children.length ; i++){
+       
+        if(children[i] != null)
+            try{
+                document.body.removeChild(children[i]) ;
+            }catch(error){//non tutti i nodi sono figli di body
+                children[i].remove()
+            }
+        }
+}
+
 
 //rimuovi dopo 3 secondi tutti i messaggi visivi
 function rimuoviMostraAutenticazione(){
@@ -19,4 +24,4 @@ function rimuoviMostraAutenticazione(){
     },3000) ;
 }
 
-export{rimuoviMostraAutenticazione}
+export{rimuoviMostraAutenticazione,rimuoviTuttiGliElementiDaBody}
