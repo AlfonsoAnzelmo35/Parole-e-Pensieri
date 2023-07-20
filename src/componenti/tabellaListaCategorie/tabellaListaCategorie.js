@@ -5,7 +5,8 @@ import { mostraPoesieComponente } from "../MostraPoesieComponente/mostraPoesieCo
 import { rimuoviTuttiGliElementiDaBody } from "../../accessori.js";
 
 async function tabellaListaCategorie(e){
-    rimuoviTuttiGliElementiDaBody([document.querySelector("div.poesie-container.register-form")]) ;
+    rimuoviTuttiGliElementiDaBody([document.querySelector("div.poesie-container.register-form"),document.querySelector("div.scriviPoesia-container")]) ;
+
 
     let categoria = e.target.textContent ;
     //modifica la stringa categoria
@@ -52,6 +53,7 @@ function mostraSottoCategorie(categoria, tabella){
 
     //setta le sottocateogira formato tabella
     let divCorpo = document.querySelector(".indice") ;
+      console.log(divCorpo)
     divCorpo.innerHTML = tabella;
 
     //

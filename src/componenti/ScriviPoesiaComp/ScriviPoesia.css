@@ -16,13 +16,15 @@
     display: block;
    
 }
+.secChildDiv{
+    width: 400px;
+}
 
 .scriviPoesia-container textarea {
     width: 75%;
     height: 100%;
     border: 2px solid #ff4070;
     border-radius: 10px;
-    text-transform: capitalize; 
     font-size: 25px;
     text-align: center;
     margin: auto;
