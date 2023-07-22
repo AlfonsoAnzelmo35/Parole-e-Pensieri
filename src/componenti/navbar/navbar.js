@@ -19,7 +19,7 @@ function navbar() {
             </div>
         </div>    
             <div class="register-area">
-                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href ="../../../paginaUtente.html"> <i class="fa fa-user" aria-hidden="true"></i></a>
                 <div>
                 <a id = "registrati-btn" href="../../../registrati.html"> registrati </a>
                 <button id = "accedi-btn"> 
@@ -32,20 +32,20 @@ function navbar() {
 
     let  navbar = document.createElement("div") ;
     navbar.innerHTML = contenuto ;
-   
     const subNavbarCont = subNavbar() ;
-    
     navbar.appendChild(subNavbarCont) ;
-
     document.body.appendChild(navbar) ;
+
+    
 
     //effettua Login o accedi a seconda se l'utente è registrato oppure no
     document.querySelector("#accedi-btn").addEventListener("load",settaAccediEsci()) ;
     
+    //lista in tabella dopo aver cliccato una categoria
     let listaSubMenu = document.querySelectorAll(".subMenuCont > li") ;
     listaSubMenu.forEach(item => item.addEventListener("click", tabellaListaCategorie));
     
-    
+    //mostra il subsubmenu e muove il quadratino
     let list = document.querySelectorAll(".subNavbar .subMenu > li > a") ;
     let quadratinoDinamico = document.querySelector(".subNavbar .quadratinoIndicatore") ;
     let listaSubMenuCont = document.querySelectorAll(".subMenu > li .subMenuCont") ;

@@ -7,7 +7,8 @@ module.exports = {
     a: './src/fileEntry.js',
     b: './src/fileEntry2.js',//entry per commenta.html
     c: './src/registrati.js', // entry per registrati.html
-    d: `./src/scriviPoesia.js`
+    d: `./src/scriviPoesia.js`,// entry per scriviPoesia.html
+    e: `./src/paginaUtente.js` // entry per paginaUtente.html
   },
   output: {
     filename: '[name].js',

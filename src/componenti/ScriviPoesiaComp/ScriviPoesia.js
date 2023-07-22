@@ -4,6 +4,7 @@ import { auth, refCollCategoria} from "../../configurazioneFirebase";
 import './ScriviPoesia.css';
 import { addDoc, collection, getDocs } from "firebase/firestore/lite";
 import { mostraAutenticazione } from "../registerForm/effettuaLogin";
+import { utente } from "../Utente/utente";
 
 
 async function scriviPoesia(){
@@ -83,19 +84,18 @@ async function scrivi(selectValue,selectSecondoValue,textareaValue){
         rimuoviMostraAutenticazione() ;
         return ;
     }
-    console.log("selectSecondoValue",selectSecondoValue)
+    
     if(selectSecondoValue == "" || selectSecondoValue == undefined){
         mostraAutenticazione(window.scrollY,"scegli una sotto Categoria!") ;
         rimuoviMostraAutenticazione() ;
         return ;
-    }
+    }   
 
-
-   
     const obj = {
         "autore": auth.currentUser.displayName,
         "testo" : textareaValue ,
-        "addedAt" :new Date().toLocaleDateString() 
+        "addedAt" :new Date().toLocaleDateString(),
+        "idUtente" : auth.currentUser.uid
     }
     await addDoc(collection(refCollCategoria,selectValue,selectSecondoValue),obj) ;
     mostraAutenticazione(window.scrollY,"PUBBLICATA") ;

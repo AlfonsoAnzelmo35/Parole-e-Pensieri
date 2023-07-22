@@ -1,0 +1,22 @@
+.utente{
+    border: 1px solid;
+    display: flex;
+
+}
+.PoesiaPubblicate .poesie-container{
+
+}
+.PoesiaPubblicate{
+    flex-grow: 7;
+    width: 300px;
+    padding: 10px;
+    height: 400px;
+    overflow-y:scroll ;
+    
+}
+
+.InfoPersonali{
+    flex-grow: 3;
+    min-height: 400px;
+
+}
